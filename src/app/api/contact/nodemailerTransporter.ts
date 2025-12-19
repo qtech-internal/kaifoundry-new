@@ -5,7 +5,7 @@ let transporter: nodemailer.Transporter | null = null;
 export async function getTransporter() {
   if (!transporter) {
     transporter = nodemailer.createTransport({
-      host: "smtp.zoho.com",
+      host: "smtppro.zoho.com",
       port: 465,
       secure: true,
       auth: {
